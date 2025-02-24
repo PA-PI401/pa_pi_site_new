@@ -3,46 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PA-PI Official</title>
+    <title>PA-PI</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(() => {
+                document.getElementById("loading").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            }, 2000);
+        });
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+        
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; text-align: center; background-color: #f4f4f4; }
+        #loading { 
+            position: fixed; 
+            width: 100%; 
+            height: 100%; 
+            background: white; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            font-size: 24px; 
+        }
+        #content { display: none; }
+        img { width: 50%; max-width: 500px; }
+        h1, h2 { color: #333; }
+        a { text-decoration: none; color: #007BFF; font-weight: bold; }
+        .video-container { display: flex; flex-direction: column; align-items: center; }
+        .video-container iframe { width: 80%; max-width: 560px; height: 315px; margin: 10px 0; }
+    </style>
 </head>
 <body>
-    <div class="loading-screen">
-        <img src="https://previews.dropbox.com/p/thumb/AChZ4SfgR1riFykMI6AvihlJM_wJuJqvsAJoIL7LHVEwU4ZmdQ51QPy0Nyl7vZG5p4GmlXw00gGBKn6MThpvgfm_hizyq_zMbsHJ2N8i0ws01SPFVJBo3N39bCTPZyjOHfOPLZ_V7rnjtJ1Csguo7dUObS6BKb_fLwQlUdWYxVBEXUld3xcFohjEkyxvcQuQGKEFk_dDHgXvY8FHZbetuB7v1LKsBxzRP-O_GJ8s38QvYC1_O0scBYUFmKALUemjxT_7CvOEfPnZaWfZGPj_wtWJPTvlY_nNu8uB5qsVyI3iTWbDLJhWJEIceWzLi6qCtkk/p.jpeg" class="animated-logo">
-    </div>
-    <div class="content">
+    <div id="loading">Loading...</div>
+    <div id="content">
         <h1>PA-PI</h1>
-        <img src="https://previews.dropbox.com/p/thumb/AChZ4SfgR1riFykMI6AvihlJM_wJuJqvsAJoIL7LHVEwU4ZmdQ51QPy0Nyl7vZG5p4GmlXw00gGBKn6MThpvgfm_hizyq_zMbsHJ2N8i0ws01SPFVJBo3N39bCTPZyjOHfOPLZ_V7rnjtJ1Csguo7dUObS6BKb_fLwQlUdWYxVBEXUld3xcFohjEkyxvcQuQGKEFk_dDHgXvY8FHZbetuB7v1LKsBxzRP-O_GJ8s38QvYC1_O0scBYUFmKALUemjxT_7CvOEfPnZaWfZGPj_wtWJPTvlY_nNu8uB5qsVyI3iTWbDLJhWJEIceWzLi6qCtkk/p.jpeg" class="small-logo">
+        <img src="https://previews.dropbox.com/p/thumb/AChZ4SfgR1riFykMI6AvihlJM_wJuJqvsAJoIL7LHVEwU4ZmdQ51QPy0Nyl7vZG5p4GmlXw00gGBKn6MThpvgfm_hizyq_zMbsHJ2N8i0ws01SPFVJBo3N39bCTPZyjOHfOPLZ_V7rnjtJ1Csguo7dUObS6BKb_fLwQlUdWYxVBEXUld3xcFohjEkyxvcQuQGKEFk_dDHgXvY8FHZbetuB7v1LKsBxzRP-O_GJ8s38QvYC1_O0scBYUFmKALUemjxT_7CvOEfPnZaWfZGPj_wtWJPTvlY_nNu8uB5qsVyI3iTWbDLJhWJEIceWzLi6qCtkk/p.jpeg" alt="PA-PI">
+        
         <h2>MUSIC</h2>
-        <a href="https://li.sten.to/a_pa_pi"><h3>A : The 1st Album</h3></a>
-        <img src="https://previews.dropbox.com/p/thumb/AChLGPUKTXybBNT64AoEWNodsWObnOWr4JlotygpX_XJ0sNBMd3C0s_dXaVc66TqDgI2jP0FwiI2YmtPqnduTye6HcQMDImepYGsD8Ln0l0zQvjl6wLKafBRqijzwYibQtL-ya7GhP2Bm7VGhr_HBcXbf8FO3Uq4dAdLBQiw31ziBay7lqunPrR9LC_RUuhyPL2bmhEsmAsKWJI1MKE9Hed_7ROX03UmO_YvzjCTYBMd7KHMFMd0IHuIO80I45Df5ofHzQvXmbLPwbuNWZgxZ7_6El6-6xoG0yoqdgM7vsj0wQVYkbxRjy7pi5g7IHxnsz_5iRQgoqlB7W9KlHvHGvjC/p.jpeg" class="album-cover">
+        <p><a href="https://li.sten.to/a_pa_pi">A : The 1st Album</a></p>
+        <img src="https://previews.dropbox.com/p/thumb/AChLGPUKTXybBNT64AoEWNodsWObnOWr4JlotygpX_XJ0sNBMd3C0s_dXaVc66TqDgI2jP0FwiI2YmtPqnduTye6HcQMDImepYGsD8Ln0l0zQvjl6wLKafBRqijzwYibQtL-ya7GhP2Bm7VGhr_HBcXbf8FO3Uq4dAdLBQiw31ziBay7lqunPrR9LC_RUuhyPL2bmhEsmAsKWJI1MKE9Hed_7ROX03UmO_YvzjCTYBMd7KHMFMd0IHuIO80I45Df5ofHzQvXmbLPwbuNWZgxZ7_6El6-6xoG0yoqdgM7vsj0wQVYkbxRjy7pi5g7IHxnsz_5iRQgoqlB7W9KlHvHGvjC/p.jpeg" alt="A : The 1st Album">
+        
         <h2>BIO</h2>
-        <p>Youtuber / 音楽家 / conf tの作曲家 自分で作曲したり、歌ったり、いろいろなことをする。</p>
+        <p>Youtuber / 音楽家 / conf tの作曲家<br>自分で作曲したり、歌ったり、いろいろなことをする。</p>
+        
         <h2>VIDEO</h2>
-        <div class="video-section">
+        <div class="video-container">
             <h3>おもしろ動画</h3>
-            <iframe src="https://www.youtube.com/embed/LlEqlWqRc5c" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/4RAibewSBRA" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/LlEqlWqRc5c"></iframe>
+            <iframe src="https://www.youtube.com/embed/4RAibewSBRA"></iframe>
+            
             <h3>コラボ動画</h3>
-            <iframe src="https://www.youtube.com/embed/kBCFO8nV0t4" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/sZFsXbAZSpQ" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/fcmfGiszq9E" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/kBCFO8nV0t4"></iframe>
+            <iframe src="https://www.youtube.com/embed/sZFsXbAZSpQ"></iframe>
+            <iframe src="https://www.youtube.com/embed/fcmfGiszq9E"></iframe>
+            
             <h3>オリジナル音楽動画</h3>
-            <iframe src="https://www.youtube.com/embed/w9uNXi_LIEw" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/mCumm3sL_nA" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/OXeLMtyII7Y" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/h4WYfFRubxY" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/nOULok-b9Ck" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/w9uNXi_LIEw"></iframe>
+            <iframe src="https://www.youtube.com/embed/mCumm3sL_nA"></iframe>
+            <iframe src="https://www.youtube.com/embed/OXeLMtyII7Y"></iframe>
+            <iframe src="https://www.youtube.com/embed/h4WYfFRubxY"></iframe>
+            <iframe src="https://www.youtube.com/embed/nOULok-b9Ck"></iframe>
         </div>
-        <h2><a href="https://li.sten.to/pa_pi" target="_blank">STREAMING</a></h2>
+        
+        <h2><a href="https://li.sten.to/pa_pi">STREAMING</a></h2>
     </div>
-    <script>
-        window.onload = function() {
-            document.querySelector('.loading-screen').style.display = 'none';
-            document.querySelector('.content').style.display = 'block';
-        };
-    </script>
 </body>
 </html>
 
